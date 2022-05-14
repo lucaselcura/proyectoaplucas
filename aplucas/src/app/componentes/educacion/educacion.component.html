@@ -1,0 +1,30 @@
+<div class="row align-items" *ngFor="let educacion of educacion">
+    <div class="col-3">
+        <img src="{{educacion.imagenEdu}}">
+    </div>
+    <div class="col text-center">
+        <a 
+        class="btn btn-primary tooltips" 
+        data-palcement="top" 
+        data-toggle="tooltips" 
+        data-original-title="Edit">
+    <i class="fa fa-pencil"></i>
+    </a>
+    <a 
+        class="btn btn-secondary tooltips" 
+        data-palcement="top" 
+        data-toogle="tooltips" 
+        data-original-title="Edit">
+    <i class="fa fa-times"></i>
+    </a>
+    </div>
+    <div class="col-6">
+        {{educacion.tituloEdu}}
+    </div>
+    <div class="col-9">
+        {{educacion.fechaEdu}}
+    </div>
+    <div class="col-12">
+        {{educacion.descEdu}}
+    </div>
+</div>
